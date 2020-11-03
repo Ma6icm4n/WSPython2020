@@ -1,0 +1,3 @@
+python("print('Pipeline Init')");
+python("import sys;sys.path.insert(0, r'C:/Users/Asus/Desktop/WSPython2020/Pipeline/engines/maya/scripts')");
+python("import init_maya");
