@@ -13,11 +13,11 @@ def get_current():
     engine = Engine()
 
     if 'maya' in sys.executable:
-        from engines import maya_engine
+        from pipeline.engines import maya_engine
         engine = maya_engine.MayaEngine()
 
     if 'houdini' in sys.executable:
-        from engines import houdini_engine
+        from pipeline.engines import houdini_engine
         engine = houdini_engine.HoudiniEngine()
 
     return engine

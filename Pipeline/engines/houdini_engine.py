@@ -1,4 +1,4 @@
-from engines import engine
+from pipeline.engines import engine
 import hou as hou
 
 class HoudiniEngine(engine.Engine):

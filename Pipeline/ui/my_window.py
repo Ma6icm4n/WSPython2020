@@ -1,9 +1,9 @@
 import sys, os # classic import
 
-sys.path.append(r'C:\Users\Asus\Desktop\WSPython2020') #import QT from the top folder
+sys.path.append(r'C:\Users\Asus\Desktop\WSPython2020\lib') #import QT from the top folder
 
 from Qt import QtWidgets, QtCompat 
-from Pipeline.engines import engine
+from pipeline.engines import engine
 
 ui_path = os.path.join(os.path.dirname(__file__), "my_window.ui") #relative path to the my_window.ui Qt window
 

@@ -2,12 +2,14 @@ import sys
 import maya.cmds as cmds
 import os
 print('Starting up pipeline')
+here = os.path.dirname(__file__)
+deployment_root = here.split('/pipeline/')[0]
 
-if r"C:\Users\Asus\Desktop\WSPython2020" not in sys.path:
-    sys.path.append(r'C:\Users\Asus\Desktop\WSPython2020') #import QT lib
-    sys.path.append(r'C:\Users\Asus\Desktop\WSPython2020\Pipeline') #import path to project
 
-from ui import my_window as mw
+sys.path.append(r'C:\Users\Asus\Desktop\WSPython2020\lib') #import QT lib
+sys.path.append(deployment_root) #import path to project
+
+from pipeline.ui import my_window as mw
 
 win = mw.MyWindow()
 win.show()

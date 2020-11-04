@@ -1,9 +1,10 @@
-from engines import engine
+from pipeline.engines import engine
 import maya.cmds as cmds
 
 class MayaEngine(engine.Engine):
     def open(self, path):
-        cmds.file(path, o=True)
+        cmds.file(new=True, force=True) 
+        cmds.file(path, open=True)
         pass
 
     def save(self):
